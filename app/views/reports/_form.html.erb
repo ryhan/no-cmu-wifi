@@ -1,0 +1,7 @@
+<%= bootstrap_form_for @report, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.text_field :name, :help_inline => 'e.g. Jane Parker' %>
+  <%= f.text_field :andrew_id, :help_inline => 'e.g. jparker' %>
+  <%= f.text_field :location, :help_inline => 'Resnik' %>
+  <%= f.text_area :personal, :help_block => 'What were you working on? What class? What project? (optional)', :value => Report::DEFAULT_MESSAGE %>
+  <%= f.actions %>
+<% end %>
